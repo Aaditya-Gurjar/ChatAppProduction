@@ -54,7 +54,7 @@ const app = express()
 require('dotenv').config()
 
 const corsOptions = {
-  origin: process.env.CLIENT_URL,
+  origin: 'interview-questions4.onrender.com',
   credentials: true
 };
 
