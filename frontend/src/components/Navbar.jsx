@@ -26,6 +26,10 @@ function Navbar() {
     }
   }, [socketId]);
 
+  useEffect(()=> {
+    setMode('dark')
+  },[]);
+
   const handleLogout = () => {
     console.log('logout', socketEmitEvent(socket));
     setUser(null);
@@ -107,7 +111,7 @@ function Navbar() {
 
         <NavIcon>
           {/* {mode === 'light' ? ( */}
-            <HiOutlineSun onClick={() => setMode('dark')} />
+            {/* <HiOutlineSun onClick={() => setMode('dark')} /> */}
           {/* ) : (
             <HiOutlineMoon onClick={() => setMode('light')} />
           )} */}
