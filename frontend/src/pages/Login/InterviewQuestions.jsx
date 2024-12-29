@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Login from "./Login"
 import "./InterviewQuestions.css"; // Import CSS for styling
 
 const InterviewQuestions = () => {
@@ -35,20 +36,21 @@ const InterviewQuestions = () => {
   };
 
   return (
-    <div className="main-container">
-      <button className="redirect-btn" onClick={handleRedirect}>
-        See More Interview Questions
-      </button>
+    // <div className="main-container">
+    //   <button className="redirect-btn" onClick={handleRedirect}>
+    //     See More Interview Questions
+    //   </button>
 
-      <div className="questions-container">
-        {questionsAndAnswers.map((item, index) => (
-          <div key={index} className="question-answer">
-            <h3>{item.question}</h3>
-            <p>{item.answer}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    //   <div className="questions-container">
+    //     {questionsAndAnswers.map((item, index) => (
+    //       <div key={index} className="question-answer">
+    //         <h3>{item.question}</h3>
+    //         <p>{item.answer}</p>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+    <Login/>
   );
 };
 
