@@ -1,0 +1,53 @@
+/* Main container styling */
+.main-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh; /* Ensure full-page height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  .redirect-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .redirect-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Questions container styling */
+  .questions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Question and answer styling */
+  .question-answer h3 {
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .question-answer p {
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .questions-container {
+      grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+  }
+  
